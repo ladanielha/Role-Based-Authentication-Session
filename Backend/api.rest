@@ -1,0 +1,33 @@
+// Create a User
+POST http://localhost:5000/users
+{
+  "name":"admin",
+  "email":"admin@gmail.com",
+  "password":"admin",
+  "confPassword":"admin",
+  "role":"admin"
+}
+
+###
+//get users by uuid
+GET  http://localhost:5000/users/ecdaa352-de68-4754-b33a-c6164bfe205a
+
+
+
+####
+// login
+POST http://localhost:5000/login
+{
+  "email":"admin@gmail.com",
+  "password":"admin",
+}
+
+// Create a project
+POST http://localhost:5000/projects
+{
+  "code_project":"kode",
+  "project_name":"proyek satu",
+  "project_bundle":"paket 1",
+  "project_location":"lokasi 1",
+  "project_image":"image"
+}
